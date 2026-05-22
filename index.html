@@ -3,38 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List App</title>
+    <title>Unit Converter Pro</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <div class="todo-wrapper">
-            <h1>My To-Do List</h1>
-            
-            <div class="input-section">
-                <input 
-                    type="text" 
-                    id="todoInput" 
-                    class="todo-input" 
-                    placeholder="Add a new task..."
-                    autocomplete="off"
-                >
-                <button id="addBtn" class="add-btn">Add Task</button>
+        <div class="converter-wrapper">
+            <div class="header">
+                <h1>⚙️ Unit Converter Pro</h1>
+                <p class="subtitle">Convert between multiple units instantly</p>
             </div>
 
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="active">Active</button>
-                <button class="filter-btn" data-filter="completed">Completed</button>
+            <!-- Category Selection -->
+            <div class="category-section">
+                <h2>Select Category</h2>
+                <div class="category-buttons">
+                    <button class="category-btn active" data-category="length">Length</button>
+                    <button class="category-btn" data-category="weight">Weight</button>
+                    <button class="category-btn" data-category="temperature">Temperature</button>
+                    <button class="category-btn" data-category="volume">Volume</button>
+                    <button class="category-btn" data-category="time">Time</button>
+                    <button class="category-btn" data-category="speed">Speed</button>
+                </div>
             </div>
 
-            <ul id="todoList" class="todo-list">
-                <!-- Tasks will be added here dynamically -->
-            </ul>
+            <!-- Conversion Area -->
+            <div class="conversion-area">
+                <div class="converter-row">
+                    <div class="input-group">
+                        <label for="inputValue">From</label>
+                        <input 
+                            type="number" 
+                            id="inputValue" 
+                            class="converter-input" 
+                            placeholder="Enter value"
+                            step="any"
+                        >
+                        <select id="fromUnit" class="unit-select">
+                            <!-- Options populated by JS -->
+                        </select>
+                    </div>
 
-            <div class="stats">
-                <span id="taskCount">0 tasks</span>
-                <button id="clearBtn" class="clear-btn">Clear Completed</button>
+                    <div class="swap-btn-container">
+                        <button id="swapBtn" class="swap-btn" title="Swap units">
+                            ⇅
+                        </button>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="outputValue">To</label>
+                        <input 
+                            type="number" 
+                            id="outputValue" 
+                            class="converter-input result" 
+                            placeholder="Result"
+                            readonly
+                        >
+                        <select id="toUnit" class="unit-select">
+                            <!-- Options populated by JS -->
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Conversion Formula -->
+                <div class="formula-display" id="formulaDisplay">
+                    Select a conversion to see the formula
+                </div>
+            </div>
+
+            <!-- Conversion History -->
+            <div class="history-section">
+                <div class="history-header">
+                    <h3>Conversion History</h3>
+                    <button id="clearHistoryBtn" class="clear-history-btn">Clear</button>
+                </div>
+                <div class="history-list" id="historyList">
+                    <p class="empty-history">No conversions yet</p>
+                </div>
+            </div>
+
+            <!-- Quick Conversions -->
+            <div class="quick-conversions-section">
+                <h3>Quick Conversions</h3>
+                <div class="quick-grid" id="quickGrid">
+                    <!-- Populated by JS -->
+                </div>
             </div>
         </div>
     </div>
