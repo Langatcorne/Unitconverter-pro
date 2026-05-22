@@ -1,83 +1,101 @@
-# To-Do List Application
+# Unit Converter Pro
 
-A simple, elegant to-do list application with local storage functionality built with vanilla HTML, CSS, and JavaScript.
+A modern, feature-rich unit converter web application built with vanilla HTML, CSS, and JavaScript.
 
-## Features
+## 🚀 Features
 
-✅ **Add Tasks** - Easily add new tasks to your list  
-✅ **Mark Complete** - Check off tasks as you complete them  
-✅ **Delete Tasks** - Remove individual tasks  
-✅ **Filter Tasks** - View all, active, or completed tasks  
-✅ **Local Storage** - Your tasks are automatically saved to your browser  
-✅ **Task Counter** - See how many active tasks you have  
-✅ **Clear Completed** - Remove all completed tasks at once  
-✅ **Responsive Design** - Works great on desktop and mobile devices  
-✅ **Beautiful UI** - Modern gradient design with smooth animations  
+- **6 Categories**: Length, Weight, Temperature, Volume, Time, and Speed
+- **Multiple Units**: Convert between 30+ different units
+- **Real-time Conversion**: Instant results as you type
+- **Swap Functionality**: Quickly swap between units
+- **Conversion Formulas**: See the math behind each conversion
+- **Conversion History**: Track your recent conversions with timestamps
+- **Quick Conversions**: Pre-made conversion cards for common conversions
+- **Local Storage**: Your conversion history is saved in your browser
+- **Responsive Design**: Works perfectly on desktop, tablet, and mobile
+- **Dark & Light Gradient UI**: Beautiful modern interface
 
-## How to Use
+## 📋 Supported Conversions
 
-1. **Add a Task**: 
-   - Type your task in the input field
-   - Click "Add Task" or press Enter
-   
-2. **Complete a Task**:
-   - Check the checkbox next to the task
-   - The task will appear dimmed with strikethrough text
+### Length
+- Millimeter, Centimeter, Meter, Kilometer
+- Inch, Foot, Yard, Mile
 
-3. **Delete a Task**:
-   - Click the "Delete" button next to the task
+### Weight
+- Milligram, Gram, Kilogram
+- Ounce, Pound, Metric Ton
 
-4. **Filter Tasks**:
-   - Click "All" to see all tasks
-   - Click "Active" to see only incomplete tasks
-   - Click "Completed" to see only completed tasks
+### Temperature
+- Celsius, Fahrenheit, Kelvin
 
-5. **Clear Completed**:
-   - Click "Clear Completed" to remove all finished tasks
+### Volume
+- Milliliter, Liter, US Gallon
+- US Pint, Cup, Teaspoon, Tablespoon
 
-## Local Storage
+### Time
+- Millisecond, Second, Minute, Hour
+- Day, Week, Month (30-day), Year (365-day)
 
-Your tasks are automatically saved to your browser's local storage. This means:
-- Your tasks persist even after closing the browser
-- No server or account required
-- Data is stored locally on your device
+### Speed
+- Meter/Second, Kilometer/Hour
+- Mile/Hour, Knot
 
-To clear all data, you can clear your browser's local storage for this site.
+## 🎯 How to Use
 
-## Files
+1. **Select a Category**: Click one of the category buttons (Length, Weight, etc.)
+2. **Enter a Value**: Type the number you want to convert
+3. **Choose Units**: Select the "From" and "To" units from the dropdowns
+4. **View Result**: The converted value appears instantly
+5. **Swap Units**: Click the circular arrow button to swap the conversion direction
+6. **View History**: All your conversions are saved and can be clicked to re-use
+
+## 💾 Local Storage
+
+Your conversion history is automatically saved in your browser's local storage. Your recent 20 conversions will be preserved even after closing the browser.
+
+## 📱 Responsive
+
+- Desktop (1200px+): Full grid layout with all features visible
+- Tablet (600-1200px): Optimized layout with wrapping elements
+- Mobile (<600px): Single-column layout with vertical swap button
+
+## 🎨 Design Features
+
+- Gradient background with smooth animations
+- Interactive category buttons with hover effects
+- Real-time formula display for transparency
+- Beautiful history cards with timestamps
+- Quick conversion cards for common conversions
+- Smooth transitions and hover effects throughout
+
+## 🔧 Technical Stack
+
+- **HTML5**: Semantic markup
+- **CSS3**: Flexbox, Grid, Gradients, Animations
+- **Vanilla JavaScript**: No dependencies or frameworks
+
+## 📝 Files
 
 - `index.html` - Main HTML structure
-- `styles.css` - Styling and animations
-- `script.js` - JavaScript functionality and local storage handling
+- `styles.css` - Complete styling and responsive design
+- `script.js` - Conversion logic and DOM manipulation
 - `README.md` - Documentation
 
-## Installation
+## 🌐 Live Demo
 
-1. Clone or download this repository
-2. Open `index.html` in your web browser
-3. Start adding your tasks!
+Visit the live demo at: `https://Langatcorne.github.io/Unitconverter-pro/`
 
-## Browser Compatibility
+## 💡 Tips
 
-This application works in all modern browsers that support:
-- HTML5
-- CSS3
-- JavaScript ES6
-- Local Storage API
+- Use the **Quick Conversions** section for instant access to common conversions
+- Click on any history item to quickly repeat that conversion
+- The formula display shows exactly how the conversion is calculated
+- All values are displayed with appropriate precision to avoid floating-point errors
 
-## Technologies Used
+## 📄 License
 
-- **HTML5** - Semantic markup
-- **CSS3** - Modern styling with gradients and animations
-- **JavaScript** - Vanilla JS (no frameworks)
-- **Local Storage API** - For data persistence
+Free to use for personal and educational purposes.
 
-## Tips
+---
 
-- Tasks are stored in your browser's local storage
-- Each task has a unique ID and timestamp
-- Use the filter buttons to organize your workflow
-- Completed tasks are visually distinct
-- The app is fully responsive for mobile use
-
-Enjoy organizing your tasks! 📝
+Made with ❤️ by Langatcorne
